@@ -38,8 +38,7 @@ api = Api(app)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 # Whether to have rate limiting or not
-RATELIMIT = True
-
+RATELIMIT = False
 
 # Helper Functions
 def default_error_responder(request_limit: RequestLimit):
